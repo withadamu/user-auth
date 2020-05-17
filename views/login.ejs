@@ -1,0 +1,48 @@
+<% include partials/header %>
+
+<main>
+    <header>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-12 col-md-8 m-auto">
+
+                    <div class="header-content">
+                        <div class="header-text">
+                            <h1>User Login</h1>
+                            <form action="/user/login" method="POST">
+
+                                <div class="form-group">
+                                    <div>
+                                        <label for="username">Username</label>
+                                    </div>
+                                    <div>
+                                        <input type="text" name="username" id="username" placeholder="Username">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div>
+                                        <label for="password">Password</label>
+                                    </div>
+                                    <div>
+                                        <input type="password" name="password" id="password" placeholder="Password">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <button class="btn btn-success">Login</button>
+                                </div>
+
+                                <p>Not Registered? Click <a href="/user/register">HERE</a> to Register</p>
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+</main>
+
+<% include partials/footer %>

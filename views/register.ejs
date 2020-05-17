@@ -1,0 +1,66 @@
+<% include partials/header %>
+
+<main>
+    <header>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-12 col-md-8 m-auto">
+
+                    <div class="header-content">
+                        <div class="header-text">
+                            <h1>User Register</h1>
+                            <form action="/user/register" method="POST">
+
+                                <div class="form-group">
+                                    <div>
+                                        <label for="name">Fullname</label>
+                                    </div>
+                                    <div>
+                                        <input type="text" name="name" id="name" placeholder="Fullname">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div>
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <div>
+                                        <input type="email" name="email" id="email" placeholder="Email">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div>
+                                        <label for="username">Username</label>
+                                    </div>
+                                    <div>
+                                        <input type="text" name="username" id="username" placeholder="Username">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div>
+                                        <label for="password">Password</label>
+                                    </div>
+                                    <div>
+                                        <input type="password" name="password" id="password" placeholder="Password">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <button class="btn btn-success">Register</button>
+                                </div>
+
+                                <p>Registered? Click <a href="/user/login">HERE</a> to Login</p>
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+</main>
+
+<% include partials/footer %>
